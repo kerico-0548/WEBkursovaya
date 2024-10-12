@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" type="text/css" href="css/lk.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="nav">
+                <ul>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li><a href="teachers.html">Преподаватели</a></li>
+                    <li><a href="subject.html" class="active">Предметы</a></li>
+                </ul>
+            </nav>
+            <a href="lk.html">
+                <div class="user">
+                    <div class="user-info">
+                        <span class="user-name">Керимов М.К.</span>
+                        <span class="user-role">Студент</span>
+                    </div>
+                    <div class="user-icon">
+                        <img src="https://avatars.mds.yandex.net/i?id=3c73c7e7d240eb0a4fb8d877774e267f57c07db9-4393175-images-thumbs&n=13" alt="User Icon" />
+                    </div>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <aside class="sidebar">
+                <h2>Личный кабинет</h2>
+                <div class="profile-actions">
+                    <div class="action">
+                        <img src="notification-icon.png" alt="Уведомления" />
+                        <span>Уведомления</span>
+                    </div>
+                    <div class="action">
+                        <img src="edit-icon.png" alt="Редактировать" />
+                        <span>Редактировать информацию</span>
+                    </div>
+                    <div class="action">
+                        <img src="mtusi-icon.png" alt="МТУСИ" />
+                        <span><a href="https://www.mtusi.ru" target="_blank">Личный кабинет МТУСИ</a></span>
+                    </div>
+                </div>
+
+                <h3>Подписанные группы</h3>
+                <input type="text" placeholder="Найти группу" class="group-search">
+                <ul class="group-list">
+                    <li class="group-item">Группа 1: Основы программирования</li>
+                    <li class="group-item">Группа 2: Алгоритмы и структуры данных</li>
+                    <li class="group-item">Группа 3: Веб-разработка</li>
+                </ul>
+                <button class="create-group">Создать группу</button>
+            </aside>
+
+            <section class="profile">
+                <h2>Информация о студенте</h2>
+                <div class="profile-info">
+                    <p><strong>ФИО:</strong> Керимов М.К.</p>
+                    <p><strong>Группа:</strong> ИС-21</p>
+                    <p><strong>Курс:</strong> 2</p>
+                </div>
+
+                <div class="file-section">
+                    <h3>Вложенные файлы</h3>
+                    <button class="toggle-files">Показать файлы</button>
+                    <ul class="file-list hidden">
+                        <li><a href="#">Задание по математике.docx</a></li>
+                        <li><a href="#">Конспект лекции по физике.pdf</a></li>
+                        <li><a href="#">Проект по информатике.pptx</a></li>
+                    </ul>
+                    <button class="add-file">Добавить файл</button>
+                </div>
+
+                <div class="history-section">
+                    <h3>История изменений</h3>
+                    <div class="history-item">
+                        <h4>Изменение 1</h4>
+                        <p>Добавлено задание по математике.</p>
+                    </div>
+                    <div class="history-item">
+                        <h4>Изменение 2</h4>
+                        <p>Обновлён конспект лекции по физике.</p>
+                    </div>
+                    <div class="history-item">
+                        <h4>Изменение 3</h4>
+                        <p>Загружен проект по информатике.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

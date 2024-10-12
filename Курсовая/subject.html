@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Предметы</title>
+    <link rel="stylesheet" type="text/css" href="css/subject.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="nav">
+                <ul>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li><a href="teachers.html">Преподаватели</a></li>
+                    <li><a href="subject.html" class="active">Предметы</a></li>
+                </ul>
+            </nav>
+            <a href="lk.html">
+                <div class="user">
+                    <div class="user-info">
+                        <span class="user-name">Керимов М.К.</span>
+                        <span class="user-role">Студент</span>
+                    </div>
+                    <div class="user-icon">
+                        <img src="https://avatars.mds.yandex.net/i?id=3c73c7e7d240eb0a4fb8d877774e267f57c07db9-4393175-images-thumbs&n=13" alt="User Icon" />
+                    </div>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="subjects-section">
+            <h2 class="page-title">Предметы</h2>
+
+            <!-- Кнопки для выбора курса -->
+            <div class="course-buttons">
+                <button class="course-button" onclick="showCourse(1)">1 курс</button>
+                <button class="course-button" onclick="showCourse(2)">2 курс</button>
+                <button class="course-button" onclick="showCourse(3)">3 курс</button>
+                <button class="course-button" onclick="showCourse(4)">4 курс</button>
+            </div>
+
+            <!-- Семестры -->
+            <div class="semester-group" id="semesters">
+                <!-- Семестр 1 -->
+                <div class="semester-block" id="semester1" style="display: none;">
+                    <h3 onclick="toggleSubjects('semester1-subjects')">1 Семестр</h3>
+                    <div class="subjects-list" id="semester1-subjects" style="display: none;">
+                        <div class="subject-card">
+                            <h4>Математика</h4>
+                            <p>Тип сдачи: <span class="exam-type exam">Экзамен</span></p>
+                            <p class="coursework">Курсовая работа: Нет</p>
+                        </div>
+                        <div class="subject-card">
+                            <h4>Физика</h4>
+                            <p>Тип сдачи: <span class="exam-type credit">Зачёт</span></p>
+                            <p class="coursework">Курсовая работа: Да</p>
+                        </div>
+                        <!-- Добавьте еще 6 предметов -->
+                    </div>
+                    
+                </div>
+
+                <!-- Семестр 2 -->
+                <div class="semester-block" id="semester2" style="display: none;">
+                    <h3 onclick="toggleSubjects('semester2-subjects')">2 Семестр</h3>
+                    <div class="subjects-list" id="semester2-subjects" style="display: none;">
+                        <div class="subject-card">
+                            <h4>Химия</h4>
+                            <p>Тип сдачи: <span class="exam-type exam">Экзамен</span></p>
+                            <p>Курсовая работа: Нет</p>
+                        </div>
+                        <div class="subject-card">
+                            <h4>Информатика</h4>
+                            <p>Тип сдачи: <span class="exam-type credit">Зачёт</span></p>
+                            <p>Курсовая работа: Да</p>
+                        </div>
+                        <!-- Добавьте еще 6 предметов -->
+                    </div>
+                </div>
+
+                <!-- Повторяем структуру для остальных семестров -->
+                <div class="semester-block" id="semester3" style="display: none;">
+                    <h3 onclick="toggleSubjects('semester3-subjects')">3 Семестр</h3>
+                    <div class="subjects-list" id="semester3-subjects" style="display: none;">
+                        <!-- Добавьте 8 предметов -->
+                    </div>
+                </div>
+
+                <div class="semester-block" id="semester4" style="display: none;">
+                    <h3 onclick="toggleSubjects('semester4-subjects')">4 Семестр</h3>
+                    <div class="subjects-list" id="semester4-subjects" style="display: none;">
+                        <!-- Добавьте 8 предметов -->
+                    </div>
+                </div>
+
+                <div class="semester-block" id="semester5" style="display: none;">
+                    <h3 onclick="toggleSubjects('semester5-subjects')">5 Семестр</h3>
+                    <div class="subjects-list" id="semester5-subjects" style="display: none;">
+                        <!-- Добавьте 8 предметов -->
+                    </div>
+                </div>
+
+                <div class="semester-block" id="semester6" style="display: none;">
+                    <h3 onclick="toggleSubjects('semester6-subjects')">6 Семестр</h3>
+                    <div class="subjects-list" id="semester6-subjects" style="display: none;">
+                        <!-- Добавьте 8 предметов -->
+                    </div>
+                </div>
+
+                <div class="semester-block" id="semester7" style="display: none;">
+                    <h3 onclick="toggleSubjects('semester7-subjects')">7 Семестр</h3>
+                    <div class="subjects-list" id="semester7-subjects" style="display: none;">
+                        <!-- Добавьте 8 предметов -->
+                    </div>
+                </div>
+
+                <div class="semester-block" id="semester8" style="display: none;">
+                    <h3 onclick="toggleSubjects('semester8-subjects')">8 Семестр</h3>
+                    <div class="subjects-list" id="semester8-subjects" style="display: none;">
+                        <!-- Добавьте 8 предметов -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

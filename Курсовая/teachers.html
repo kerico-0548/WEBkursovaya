@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Преподаватели</title>
+    <link rel="stylesheet" type="text/css" href="css/teachers.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="nav">
+                <ul>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li><a href="teachers.html" class="active">Преподаватели</a></li>
+                    <li><a href="subject.html">Предметы</a></li>
+                </ul>
+            </nav>
+            <a href="lk.html">
+                <div class="user">
+                    <div class="user-info">
+                        <span class="user-name">Керимов М.К.</span>
+                        <span class="user-role">Студент</span>
+                    </div>
+                    <div class="user-icon">
+                        <img src="https://avatars.mds.yandex.net/i?id=3c73c7e7d240eb0a4fb8d877774e267f57c07db9-4393175-images-thumbs&n=13" alt="User Icon" />
+                    </div>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="teachers-section">
+            <h2 class="teachers-title">Ваши преподаватели</h2>
+
+            <!-- Кнопки для фильтрации преподавателей -->
+            <div class="filter-buttons">
+                <a href="#" class="filter-btn active">Ваши преподаватели</a>
+                <a href="#" class="filter-btn">Преподаватели вашего факультета</a>
+                <a href="#" class="filter-btn">Все преподаватели</a>
+            </div>
+
+            <!-- Поле для поиска преподавателей -->
+            <div class="search-container">
+                <input type="text" placeholder="Поиск преподавателей..." class="search-input">
+                <button class="search-button">Найти по всему ВУЗу</button>
+            </div>
+
+            <!-- Секции с преподавателями по предметам -->
+            <div class="subject-section">
+                <h3 class="subject-title">Математика</h3>
+                <div class="teachers-group scrollable-group">
+                    <div class="teacher-card">
+                        <div class="teacher-photo-container">
+                            <img src="img/pr1.jpg" alt="Иванов И.И." class="teacher-photo">
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Иванов И.И.</h3>
+                            <p>Стаж: 10 лет</p>
+                        </div>
+                    </div>
+                    <div class="teacher-card">
+                        <div class="teacher-photo-container">
+                            <img src="img/pr2.jpg" alt="Смирнова Л.В." class="teacher-photo">
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Смирнова Л.В.</h3>
+                            <p>Стаж: 12 лет</p>
+                        </div>
+                    </div>
+                    <div class="teacher-card">
+                        <div class="teacher-photo-container">
+                            <img src="img/pr3.jpg" alt="Кузнецов А.В." class="teacher-photo">
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Кузнецов А.В.</h3>
+                            <p>Стаж: 8 лет</p>
+                        </div>
+                    </div>
+                    <div class="teacher-card">
+                        <div class="teacher-photo-container">
+                            <img src="img/pr8.jpg" alt="Павлов К.Г." class="teacher-photo">
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Гуриков К.Г.</h3>
+                            <p>Стаж: 15 лет</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-section">
+                <h3 class="subject-title">Физика</h3>
+                <div class="teachers-group">
+                    <div class="teacher-card">
+                        <div class="teacher-photo-container">
+                            <img src="img/pr4.jpg" alt="Петров П.П." class="teacher-photo">
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Петров П.П.</h3>
+                            <p>Стаж: 8 лет</p>
+                        </div>
+                    </div>
+                    <div class="teacher-card">
+                        <div class="teacher-photo-container">
+                            <img src="img/pr5.jpg" alt="Сидорова Л.М." class="teacher-photo">
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Сидорова Л.М.</h3>
+                            <p>Стаж: 9 лет</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-section">
+                <h3 class="subject-title">Химия и Программирование</h3>
+                <div class="teachers-group">
+                    <div class="teacher-card">
+                        <div class="teacher-photo-container">
+                            <img src="img/pr6.jpg" alt="Сидоров С.С." class="teacher-photo">
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Пидоров К.И.</h3>
+                            <p>Стаж: 12 лет</p>
+                        </div>
+                    </div>
+                    <div class="teacher-card">
+                        <div class="teacher-photo-container">
+                            <img src="img/pr7.jpg" alt="Тарасов И.Н." class="teacher-photo">
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Долбоёбов В.Ш.</h3>
+                            <p>Стаж: 9 лет</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-section">
+                <h3 class="subject-title">Экономика</h3>
+                <div class="teachers-group">
+                    <!-- Убрано для Экономики, преподаватель уже в Математике -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
